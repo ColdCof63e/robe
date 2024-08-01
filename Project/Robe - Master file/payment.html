@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="./style/paymentStyling.css">
+    <link rel="icon" type="image/x-icon" href="/Robe/images/ROBE_transparent.colored.png">
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/ROBE_transparent.colored.png" alt="Robe - For Monarchs" style="width: 200px;">
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Payment</h1>
+            <form action="/submit_payment" method="post">
+                <div class="form-group">
+                    <label for="card_number">Card Number:</label>
+                    <input type="text" id="card_number" name="card_number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry_date">Expiry Date:</label>
+                    <input type="text" id="expiry_date" name="expiry_date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+                <button type="submit">Pay Now</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

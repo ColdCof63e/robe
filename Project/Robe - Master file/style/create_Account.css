@@ -1,0 +1,188 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    background-color: #667292; /* Dark blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+header .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+header .nav-links a svg {
+    vertical-align: middle;
+}
+
+
+
+
+
+/* Main content styles */
+
+main {
+    padding: 20px;
+}
+
+
+/* Slider styles */
+
+.slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Account creation page styles */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Footer styling */
+footer {
+    background-color: #667292; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 5px;
+}
+
+footer ul li a:hover {
+    background-color: #505f7a;
+}
+
+
+
+

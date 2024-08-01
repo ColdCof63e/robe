@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Robe - For Monarchs</title><style>
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* Header styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header #one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+header button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Navigation styles */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+
+/* Main content styles */
+
+main {
+    padding: 20px;
+}
+
+
+/* Slider styles */
+
+.slider {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+/* Account creation page styles */
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer styles */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li:first-child {
+    margin-left: 0;
+}
+
+</style></head><body><!-- Product Description Page --><header><div id="one"><input type="text" name="search" placeholder="Search..."><button type="submit"><i class="fa fa-search"></i></button><nav><ul><li>All</li><li>Shirts</li><li>Jeans</li><li>Footwares</li><li>Accessories</li></ul></nav></div></header><main><div id="productinfo"><!-- Slider for images and brief or Other way is to use Carousel functions --><input type="range" min="1" max="10" class="slider"></div></main><footer><div><ul><li>About Us</li><li>Contact Us</li></ul></div></footer><!-- Account Creation Page --><main><div class="container"><form action="/submit_account" method="post"><div class="form-group"><label for="username">Username:</label><input type="text" id="username" name="username" required></div><div class="form-group"><label for="email">Email:</label><input type="email" id="email" name="email" required></div><div class="form-group"><label for="password">Password:</label><input type="password" id="password" name="password" required></div><div class="form-group"><label for="confirm_password">Confirm Password:</label><input type="password" id="confirm_password" name="confirm_password" required></div><button type="submit">Create Account</button></form></div></main></body></html>
